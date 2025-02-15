@@ -1,0 +1,173 @@
+/*  
+     We use css to style html elements
+     To style an html element we have to select/target the html element that we are trying to style 
+     we do that by using what we call a CSS selector,
+     CSS selectors are used to target HTML elements on your pages,
+     allowing you to apply styles based on their ID, class, tag name, and more. There are mainly 5 types of selectors.
+
+     1. Element Selector (p) : Targets all elements of a specific type, such as paragraphs or headers. For example, setting a common font size for all paragraphs
+
+         p {
+
+           font-size: 16px;
+
+         }
+
+     2. Class Selector (.): Applies styles to elements with a specific class attribute. For instance, making all buttons have a blue background.
+
+         .paragraph {
+                
+               font-size: 16px;
+  
+         }
+
+     3. ID Selector (#): Styles a single element identified by its unique id. For example, changing the background color of a header
+
+         #biography {
+         
+              font-size: 16px;
+
+         }
+
+     4. Universal Selector (*): Selects all elements on the page and applies the same style universally. For example, setting the font color for every element.
+
+         * {
+
+            color: red;
+
+         }
+*/
+
+
+/* 
+     we write css by selecting the html element then curly brackets open and close: 
+
+     p {
+
+      
+
+     }
+
+then we wrie properties and values inside the curly brackets 
+
+     property : value; 
+
+CSS properties are the foundation of web design, used to style and control the behaviour of HTML elements. They define how elements look and interact on a webpage.
+Used to control layout, colors, fonts, spacing, and animations on web pages.
+
+
+     p {
+
+         font-size: 26px;
+
+     }
+
+*/
+
+
+/* 
+
+     Link the css file to html file so that the styling that we did in the css file reflects and gets affected! 
+     To add external css add a <link> tag and inside the rel (relation) attribute write stylesheets and inside the href (hypertext reference) attribute 
+     add the file location, like this : <link rel="stylesheet" href="style.css">
+ */
+
+
+/* Text specific CSS properties */
+
+ h1 {
+    color: red; /*  to change/set the font color */
+
+    background-color: pink;  /*  To change the background color  */
+
+    font-size: 40px; /* To change/set font size ; here we have set the font size to 40px (px = pixels) */
+
+    font-family: monospace; /* to change font */
+
+    font-weight: 100; /* To change the thickness of the font */
+
+    font-style: italic; /*The font-style CSS property sets whether a font should be styled with a normal, italic, or oblique face from its font-family. */
+
+    text-align: center; /* To change the alignment of the text, attribute value can be : center, left, right */
+ }
+
+
+/* 
+   Every single thing on a webpage is a rectangular box, These boxes can have other boxes in them and can sit alongside one another, 
+   padding increases the space between the border of a box and the content of the box. (box ke andar space)
+   border adds space (even if it’s only a pixel or two) between the margin and the padding.   
+   margin increases the space between the borders of a box and the borders of adjacent boxes. (box ke bahar space)
+*/
+
+ #box {
+
+    height: 200px; /* For defining the weight of the element */
+    width: 200px;  /* For defining the height of the element */
+    background-color: indianred;
+
+    margin: 100px; /* To add margin, we can define margins individually to everysides like margin-top: 100px; (right, bottom, left) */
+    padding: 20px;  /* To add padding, we can define padding individually to everysides like padding-top: 100px; (right, bottom, left) */
+
+ }
+
+
+
+
+ #parent {
+    height: 400px;
+    width: 600px;
+    background-color: aquamarine;
+ }
+
+ #child {
+
+    height: 30%;
+    width: 30%;
+    background-color: royalblue ;
+
+ }
+
+
+ button {
+
+    margin: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: turquoise;
+    border: 2px solid red; /* here we have said that make the border 2px and set the style to solid and color to red */
+    /* Use border: none; to make the border dissapear */
+    border-radius: 10px; /* To change the border radius */
+  
+
+ }
+
+
+ #button:hover {
+
+    margin: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(150, 101, 36);
+    border: 2px solid red; /* here we have said that make the border 2px and set the style to solid and color to red */
+    /* Use border: none; to make the border dissapear */
+    border-radius: 10px; /* To change the border radius */
+  
+
+ }
+
+
+ div {
+   background-color: pink;
+ }
+
+ span {
+   background-color: palevioletred;
+ }

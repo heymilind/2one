@@ -1,0 +1,175 @@
+#d1 {
+    background-color: pink;
+}
+
+#s1 {
+    background-color: palevioletred;
+}
+
+#d2 {
+    background-color: royalblue;
+    display: inline-block;
+}
+
+/* Learn CSS */
+
+/* 
+
+To style the raw web structure made with HTML we Use CSS
+
+To use CSS we can use inline, internal and external CSS
+
+CSS syntax looks like this ;
+
+selector {
+    property: value ;
+}
+
+CSS selectors are the precision targeting system of web styling.
+They're like surgical instruments that allow you to pinpoint exactly which HTML elements you want to style, 
+how you want to style them, and under what conditions.
+
+for ex: if we use 
+
+p {
+ color: navy ; 
+}
+
+/ Targets ALL paragraph elements /* What it does: Changes text color to navy for every <p> tag 
+ How it works ; - Scans entire document
+- Identifies every <p> element
+- Applies navy color universally
+
+
+Imagine your HTML document as a bustling classroom, and each element is a student. 
+ID and Class are like special name assigned to each tags that help you identify and organize these students uniquely!
+ID: The Unique Student Identification 🌟
+Think of an ID like a student's unique student number:
+
+Only ONE student has this specific number
+Completely exclusive and one-of-a-kind
+Like a personal name tag that no one else can wear, 
+
+<!-- Think of this as a special name tag on ONE specific student -->
+<div id="class-president">Emma Johnson</div>
+
+Class: The Group Identity Tag 🌈
+Imagine classes like team jerseys in a school:
+
+Multiple students can wear the same jersey
+Represents a shared characteristic or group
+Like a team name tag that multiple people can share
+
+<!-- Multiple students can wear the "honor-student" jersey -->
+<p class="honor-student">Excellent work!</p>
+<div class="honor-student">Top performer</div>
+
+there are multple types of selectors in CSS like : 
+
+Class selectors
+Class selectors will select all elements with the given class, 
+which is just an attribute you place on an HTML element. Here’s how you add a class to an HTML tag and select it in CSS:
+
+<!-- index.html -->
+
+<div class="alert-text">Please agree to our terms of service.</div>
+
+/* styles.css 
+
+.alert-text {
+    color: red;
+  }  
+
+
+
+
+ID selectors 
+ID selectors are similar to class selectors. They select an element with the given ID, which is another attribute you place on an HTML element. The major difference between classes and IDs is that an element can only have one ID. It cannot be repeated on a single page and should not contain any whitespace:
+
+<!-- index.html -->
+
+<div id="title">My Awesome 90's Page</div>
+
+/* styles.css 
+
+#title {
+    background-color: red;
+}
+
+For IDs,
+instead of a period,
+we use a hashtag immediately followed by the case-sensitive value of the ID attribute. A common pitfall is people overusing the ID attribute when they don’t necessarily need to,
+and when classes will suffice. While there are cases where using an ID makes sense or is needed,
+such as taking advantage of specificity or having links redirect to a section on the current page,
+you should use IDs sparingly (if at all). 
+
+
+
+Universal selector
+The universal selector will select elements of any type, hence the name “universal”, and the syntax for it is a simple asterisk. In the example below, every element would have the color: purple; style applied to it.
+
+* {
+  color: purple;
+}
+
+
+Type selectors
+A type selector (or element selector) will select all elements of the given element type, and the syntax is just the name of the element:
+
+<!-- index.html -->
+
+<div>Hello, World!</div>
+<div>Hello again!</div>
+<p>Hi...</p>
+<div>Okay, bye.</div>
+
+
+/* styles.css 
+
+div {
+    color: white;
+  }
+  Here, all three <div> elements would be selected, while the <p> element wouldn’t be.
+
+
+The grouping selector
+What if we have two groups of elements that share some of their style declarations?
+
+.read {
+  color: white;
+  background-color: black;
+  /* several unique declarations 
+}
+
+.unread {
+    color: white;
+    background-color: black;
+    /* several unique declarations 
+}
+
+Both our .read and .unread selectors share the color: white;
+and background-color: black;
+
+declarations,
+but otherwise have several of their own unique declarations. To cut down on the repetition,
+we can group these two selectors together as a comma-separated list:
+
+.read,
+.unread {
+    color: white;
+    background-color: black;
+}
+
+.read {
+    /* several unique declarations 
+}
+
+.unread {
+    /* several unique declarations 
+}
+
+Both of the examples above (with and without grouping) will have the same result,
+but the second example reduces the repetition of declarations and makes it easier to edit either the color or background-color for both classes at once. 
+
+
+*/

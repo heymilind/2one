@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="learn.css">
+</head>
+
+<body>
+
+
+
+    <!-- 
+    
+    how do we add texts?
+
+      Texts are written in two format
+      1. Headings ; To add a heading use <h1> , <h2> , <h3> , <h4> , <h5>  , <h6>
+
+               There are 6 different levels of headings starting from <h1> to <h6>.
+               The number within a heading tag represents that heading’s level. 
+               The largest and most important heading is h1, 
+               while h6 is the tiniest heading at the lowest level.
+
+      2. Paragraphs ; To add a paragraph use <p> 
+    
+    -->
+
+    <h1> Hello</h1>
+
+    <h6> Hello </h6>
+
+
+
+    <!-- <br> is known as line break tag ; it is used to add line break creates a line break in a block of text. forcing the text after the <br> tag to start a new line and go below it  -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et quod eaque sapiente quisquam nemo
+        distinctio voluptates explicabo quos impedit! Reprehenderit sint <br> voluptate dignissimos. Ratione
+        consequuntur
+        illum impedit laudantium?
+    </p>
+
+
+    
+    <p class="paragraphlo"> <1   
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+    </p>
+
+
+    <!-- 
+        
+        The <hr> tag in HTML is used to give a thematic break between paragraphs on a webpage. 
+        It draws a horizontal line between paragraphs. It is also called a horizontal rule in HTML.
+
+    -->
+
+
+    <hr>
+
+    <!-- We have two different ways to add lists ; Ordered Lists <ol> and Un-ordered Lists <ul>
+         
+         Each item within the list is created using the list item element <li>
+            
+    -->
+
+
+    <H2>Unordered list</H2>
+    <ul>
+        <li>bole bole bum bum</li>
+        <li>chinki chanka bum bum</li>
+        <li>pim pim pam pam bum bumm</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>boko</li>
+        <li>ghy</li>
+        <li>jorjhat</li>
+        <li>dhemaji</li>
+        <li>barpeta</li>
+    </ol>
+
+    <!--  
+          To display an image in HTML we use the <img> element,
+          it embeds an image into the page using a src attribute
+          which tells the browser where the image file is located. 
+
+          the alt attribute is known as alternate message, 
+          it is used to display a piece of text that will be shown to the end user if the website is unsable to fetch the image. 
+
+
+          within the src we can add two types of image links 
+
+          Absolute links : Links to pages on other websites on the internet ; 
+          
+          <img src="https://www.keyweo.com/wp-content/uploads/2022/04/google-logo-history.jpg"
+          alt="google">
+
+          Relative links : Links to pages located on our own websites ;
+          
+          <img src="/Images/anno4.jpg" alt="Anno"> is a relative link
+          that points to a file in the same folder as the page where the link appears which Uses a forward slash to indicate the path to a file or folder on the same website
+    -->
+
+
+    <img src="/Images/anno4.jpg" alt="Anno">
+
+    <img src="https://www.keyweo.com/wp-content/uploads/2022/04/google-logo-history.jpg" alt="google">
+
+    <br>
+
+    <!-- 
+         To create a link in HTML, we use the anchor element.
+         An anchor element is defined by wrapping the text or another HTML element we want to be a link with an <a> tag. 
+         Inside the opening <a> tag we need to add an href (hypertext reference) attribute 
+         to the opening anchor tag. The value of the href attribute is the destination we want our link to go to.
+    -->
+
+    <a href="https://en.wikipedia.org/wiki/Indian_Institutes_of_Technology"> Indian Institute of Technology </a>
+
+    <!-- 
+         How do we create a form in HTML?
+         The form element is a container element like the div element
+         we learned earlier in the curriculum. The form element wraps all of the inputs a user will interact with on a form.
+         The form element accepts two essential attributes; action attribute which takes a URL value that tells the form where it should send its data to be processed. 
+         The second is the method attribute which tells the browser which HTTP request method it should use to submit the form.
+         The GET and POST request methods are the two you will find yourself using the most.
+
+         Use the <form> </form> tags to create a formm in HTML and inside the form element we use <input> tags to create input fields and the 
+         input tag accepts a type attribute which tells the browser what type of data it should expect and how it should render the input element.
+         inside an input tag we add type attribute which tells the browser what type of data it should expect and how it should render the input element.
+
+         We have different types of input types : The first being the text input, which is written as type ="text"
+
+         <input type ="text" name="name" id="Username">
+
+         Text inputs accept any text input. For example, you would use it to collect things like users’ first and last names.
+
+         2. Email inputs are specialized text inputs just for email addresses. type ="email"
+         3. Password inputs are another specialized text input. type ="password"
+            They differ from regular text inputs in that they mask the inputted data with another character
+            – usually an asterisk (*) or bullet point (•) – to prevent anyone from seeing what has been entered.
+            Speacialy meant for creating input fields for passwords
+         4. The number input only accepts number values and ignores any other characters the user tries to enter. type ="number"
+         5. To collect dates from a user, we can use a date input.
+            This input is unique because it provides a better user experience for choosing dates by rendering a date picker calendar.
+         6. To create a checkbox we use the input element with a type attribute of “checkbox” 
+            they allow users to choose from a set of predefined options. like a agreeing to Terms & Conditions. type ="checkbox"
+         7. Both date and time combined : type="datetime-local"
+         8. only time : type="time"
+         9. Radio buttons : it is the same as checkboxes but When we select one of the radio buttons and then select another, 
+            it will deselect the first one. Radio buttons know to do this because they have the same name attribute.
+            specifically used for the gender selection option in sign up pages in website
+         10. To add a color selector use the type ="color"
+
+    -->
+
+    <form>
+
+
+        <label for="Username">Username</label> <!-- For adding a label/caption for a form elements, 
+        
+        The for attribute is used to associate a label with the form element. The value for the for attribute is set as the id of the form element which is Username
+        so when we click label also focuses on the input field. -->
+<input type="text" name="" id="Username" required> <!-- The required attribute : so when we add a required attribute to the input field
+        we cant leave it blank and then hit the submit button, if we do so we will get a error saying that "please fill out the field"
+        -->
+
+<input type="submit">
+<br>
+<input type="password" name="" id="pass" minlength="7" maxlength="11" required> <!-- You can set the minimum lenght and maximum length required to the input by adding
+        minlength=""  maxlength="" , in the attr value place the reuired characteres
+        -->
+<input type="reset"> <!-- For resetting the form -->
+
+<input type="submit" for="pass"> <br>
+<input type="number" pattern="[0-9]">
+<br>
+<textarea name="comment" id=""></textarea> <br>
+
+<input type="file" accept=".svg">
+<!-- for file upload feature, 
+        to restrict the file type use the accept attr and in the value insert the type of file you're expecting like .svg -->
+
+<input type="date" name="" id="">
+<br>
+<input type="time" name="" id="">
+<br>
+<input type="datetime-local" name="" id="">
+<br>
+<input type="radio" name="gender" id="gender">
+<input type="radio" name="gender" id="gender">
+<input type="color" name="" id="">
+
+</form>
+
+
+    <!--
+         To show a string of texts that will be used to guide users on what to enter in form elements, we use placeholder attribute to an input tag 
+         The value will be the placeholder text we want to display in the input:  <input type="text" placeholder="Enter Your name"> ;
+         simple funda of the placeholder attribute is " jab tak koi data nhi dalta tab tak place ko hold karte raho " 
+    -->
+
+    <form action="">
+        <input type="text" name="" id="" placeholder="Enter Your name">
+    </form>
+
+
+    <!-- 
+         To embed a video in your web page use the <video> </video> tag , the video tag works the same as image tag <img> 
+         It uses the same src attribute like <img> which tells the browser where the image file is located. the src takes the same value relative link and absolute link 
+     
+
+         written like this : 
+         <video src=""></video>
+
+         the <video> tag will not work alone even if you add the video location in the src 
+         to make it work use the autoplay attribute.
+
+         Even after adding the autoplay attribute the video will play for a certain time and stop because you didn't mentioned that the video should play continiously 
+         to fix this add a loop attribute. 
+
+         Then to add control buttons so that you can mute pause, replay, expand, download, video timeline , playback speed, use the controls attribute 
+         and to mute the video when the webpage gets loaded you can use the muted attribute :
+
+
+         <video autoplay loop controls muted src="/Vidsbitch/8f8a961c3b6d74b119982c00bf01f67a.mp4">HTML </video>
+    -->
+
+
+    <video autoplay loop controls muted src="/Vidsbitch/8f8a961c3b6d74b119982c00bf01f67a.mp4">HTML </video>
+
+    <!-- 
+         The <div> (division) element is a generic block-level element 
+         that is typically used to separate page content into blocks to contain for HTML elements,
+         which is then styled with CSS or manipulated with JavaScript. 
+
+         The div tag in HTML is used to divide web page content into sections, 
+         such as headers, footers, and navigations.
+        Common uses for divs include grouping similar text, pictures, headers, and links.
+    -->
+
+
+    <div>
+        <h2>hello</h2>
+        <h3>hello</h3>
+        <h4>hello</h4>
+    </div>
+
+    <!-- <pre> (preformatted) tag is used to define a block of text in the same manner as it is written in the html file -->
+
+    <pre>
+      Okole thaki        thaki 
+      thakile 
+      beya nalage janu? tumi
+      o jana moi 
+           o janu!
+        Kintu bujibo nu kune huje?     huje janu?
+    </pre>
+
+    <b>Statistics is the key to Prediction</b> <!-- <b> for making the text bold -->
+
+    <br>
+
+    <strong>Human kind is so foolish that majority of the people don't
+        really realize that the path they are in, is actually inside the world if consumerism not humanism</strong>
+    <!-- <strong> also makes the text bold -->
+
+    <br>
+
+    <i>ooh lala la!</i> <!-- <i> italic tag for making the text italic -->
+
+    <br>
+
+    <em>thats what we call a perfect wife material</em>
+    <!-- <em> emphesise tag for making the text emphesized (italic) -->
+
+
+    <br>
+
+    <p>fuck you <strike>Ajungla</strike></p> <!-- for striking a text from the center -->
+
+    <br>
+
+    <p>H <sup>2</sup>0 </p> <!-- <sup> superscript tag used for exponents, measurement units, and ordinal numbers. -->
+
+    <p>M <sub>6</sub>0</p> <!-- <sub> subscript tag used for mathematics and chemical formulas -->
+
+
+    <table border="1" style="border-collapse: collapse;"> <!-- use <table> to define a table-->
+
+        <!-- border attr is used to add border to a table and all the cells , To prevent double borders use : 
+         
+        style="border-collapse: collapse;" -->
+
+        <thead>
+            <!-- Use <thead> to add a table header, it must come before any other tags inside the table, it contains column titles -->
+
+            <tr> <!-- Use <tr> to create a table row -->
+
+                <th>Name</th> <!-- Use <th> to create table heading -->
+                <th>Age</th>
+                <th>Sex</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody> <!-- Use <tbody> to create table body, it must come after the thead and before any other tags inside a table, 
+            
+            it contains the main contents of the table which goes inside <td> data cells nested inside the <tr>   -->
+
+            <tr>
+
+                <td>Rajiul</td>
+                <!-- Use <td> to create table cells (data). The table cells store data to be displayed in the table -->
+                <td>19</td>
+                <td>Non-Binary</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Milind</td>
+                <td>20</td>
+                <td>M</td>
+
+            </tr>
+        </tbody>
+
+        <tfoot> <!-- Use <tfoot> to create table footer, it must come after the tbody and before any other tags inside a table, 
+                
+                we put the <tbody> is placed on the bottom part of the table   -->
+
+            <tr>
+                <td colspan="3">homogolepapa</td>
+                <!-- Use colspan attribut merge cells in a row together, 
+                
+                so if you have created 3 cells and in the 2nd or 3rd rows you want to merge 2 cells together
+                
+                then in the colspan attr value write 2, in conclusion it will merge 2 cells together leaving the last cell alone -->
+
+            </tr>
+
+        </tfoot>
+
+
+
+
+    </table>
+
+    <br>
+
+    <table border="1" style="border-collapse: collapse; text-align: center;"> <!-- use <table> to define a table-->
+
+        <!-- border attr is used to add border to a table and all the cells , To prevent double borders use : 
+         
+        style="border-collapse: collapse;" -->
+
+        <thead>
+            <!-- Use <thead> to add a table header, it must come before any other tags inside the table, it contains column titles -->
+
+            <tr> <!-- Use <tr> to create a table row -->
+
+                <th>Name</th> <!-- Use <th> to create table heading -->
+                <th>Age</th>
+                <th>Sex</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody> <!-- Use <tbody> to create table body, it must come after the thead and before any other tags inside a table, 
+            
+            it contains the main contents of the table which goes inside <td> data cells nested inside the <tr>   -->
+
+            <tr>
+
+                <td rowspan="3">Milind</td>
+                <!-- Use rowspan attribut merge cells in a column together, 
+                
+                so if you have created 3 cells and in the 2nd or 3rd rows you want to merge 2 cells together
+                
+                then in the colspan attr value write 2, in conclusion it will merge 2 cells together leaving the last cell alone -->
+
+                <td>19</td>
+                <td>Non-Binary</td>
+
+            </tr>
+
+            <tr>
+
+                <td>20</td>
+                <td>M</td>
+
+            </tr>
+        </tbody>
+
+        <tfoot> <!-- Use <tfoot> to create table footer, it must come after the tbody and before any other tags inside a table, 
+                
+                we put the <tbody> is placed on the bottom part of the table   -->
+
+            <tr>
+                <td colspan="3">homogolepapa</td>
+                <!-- Use colspan attribut merge cells in a row together, 
+                
+                so if you have created 3 cells and in the 2nd or 3rd rows you want to merge 2 cells together
+                
+                then in the colspan attr value write 2, in conclusion it will merge 2 cells together leaving the last cell alone -->
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+    <!-- 
+    
+         Display properties specifies how each element is displayed 
+
+         Block Elements : starts a new line and take up the whole width available forcing the other element to sit below it 
+              ex: <p>, <div>, <h1>, <figure> etc.
+
+
+         Inline Elements : Donot start a new line and only take width according to its need! it allows other elements to sit beside it unlike Block elements
+
+              ex: <span>, <a>, <strong>, <img> etc.
+    
+    -->
+
+    <div id="d1"> <!--- default css display property is set to block -->
+        Div
+    </div>
+
+    <span id="s1"> <!-- default css display property is set to inline
+        
+        element with display property of inline can have height and with and if you set the display property to disipay: block
+        it will become a block element and take the whole width to avoid and solve this we have inline-block element which is can take width and height but 
+        behaves as if its display property is inline, hybrid mixture of both display properties block/inline making it inline-block+
+    -->
+        Span
+    </span>
+
+    <div id="d2">div 2</div>
+
+
+</body>
+
+</html>
